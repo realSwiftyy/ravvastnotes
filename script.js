@@ -23,7 +23,7 @@ icons.forEach(icon => {
 createBtn.addEventListener('mousedown', () => {
     let originalContent = document.body.innerHTML
 
-    document.body.innerHTML = outputWrapper.innerHTML
+    document.body.innerHTML = document.querySelector('.output-container')
     window.print()
     document.body.innerHTML = originalContent
 
