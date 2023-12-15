@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    margin: 0;
+    border: 0;
+}
+
+.app {
+    display: flex;
+    width: 100%;
+}
+
+.creator-wrapper {
+    height: 90vh;
+    width: 30vw;
+    min-width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: relative;
+    top: 5vh;
+    left: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.output-container {
+    padding: 50px;
+    height: 90vh;
+    width: 60vw;
+    position: relative;
+    top: 5vh;
+    left: 10vh;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    overflow: hidden;
+    word-wrap: break-word;
+    justify-content: space-between;
+}
+
+.creator-wrapper h1 {
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.creator-wrapper input {
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    padding-left: 10px;
+}
+
+.icons-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top:1px solid rgba(0, 0, 0, 0.15);
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    cursor: default;
+}
+
+.icons-color {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    height: 50px;
+    color: white;
+    border-radius: 50%;
+    margin: 5px;
+    user-select: none;
+    font-size: 24px;
+}
+.ico.red {
+    background-color: #ce1313;
+}
+.ico.blue {
+    background-color: #1c5ab4;
+}
+
+.ghost img {
+    width: 60%;
+    transform: translateY(-5%);
+}
+
+.btn-create {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.75);
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    bottom: 25px;
+}
+
+.notes-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.note {
+    position: relative;
+ }
