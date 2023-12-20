@@ -138,3 +138,9 @@ input[type="text"] {
 .note {
     position: relative;
  }
+
+.sheet-name {
+    display: flex;
+    justify-content: center;
+
+}
